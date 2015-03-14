@@ -1,0 +1,49 @@
+Towers of Hanoi:
+-------------------
+Example setup with 2 disks and 3 posts (n=2)
+
+1 0 0 
+2 0 0 
+---------- step
+0 0 0 
+2 0 1 
+---------- step
+0 0 0 
+0 2 1 
+---------- step
+0 1 0 
+0 2 0 
+---------- step
+
+2^n - 1 moves, where n is the number of disks, and n > 0Function design:
+
+void print_array()
+{
+	for(int i = 0; i < COLS; i++)
+	{
+		for(int z = 0; z < disks; z++)
+		{
+			cout << b[z][i];
+		}
+		cout << “—————“ << endl;
+	}
+}
+
+void towers(int disks, int b[][COLS], int spare, int from_col, int to_col)
+{
+	if(disks >= 1)
+	{
+		//Next 
+ 		towers(disks-1, b, spare, to_col, from_col); 
+
+ 		//Move the disk
+		b[disk][from_col] = b[disk][to_col];
+		b[disk][from_col] = 0;
+
+ 		//Print the board
+		print_array();
+
+		//Next 
+ 		towers(disks-1, b, spare, to_col, from_col); 
+	}
+}

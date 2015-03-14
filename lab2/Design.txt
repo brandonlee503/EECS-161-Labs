@@ -1,0 +1,35 @@
+Directions:
+——————————————
+Each player will place their fleet of 5 ships on the board, after that, each player will take turns picking target areas on the board to attack. If a target area you are attacking has an enemy ship, you will damage that ship. After so many hits on an enemy ship, you will sink that ship. The first person to sink all the ships will win.
+
+
+Menus:
+—————————————
+1) Getting number of players:
+How many players (1-2)?
+
+2) how to select the spot where the user wants to put their ships on the board, and
+for x >= 5 x++:
+	Please enter the coordinate where you would like to place your ship:
+
+
+3) the menu for selecting where to hit the opponent’s ships. !
+Which coordinate would you like to attack? For example, “D-4”:
+
+
+
+Game board:
+—————————————
+----------------------
+x| 1 | 2 | 3 | 4 | 5 |
+----------------------
+A|   |   |   |   |   |
+----------------------
+B|   |   |   |   |   |
+----------------------
+C|   |   |   |   |   |
+----------------------
+D|   |   |   |   |   |
+----------------------
+E|   |   |   |   |   |
+----------------------
